@@ -1,11 +1,11 @@
-"""worker_a865e7 - Main entry point."""
+"""worker_0cf7e0 - Main entry point."""
 import os
 import sys
 import json
 import logging
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-logger = logging.getLogger("worker_a865e7")
+logger = logging.getLogger("worker_0cf7e0")
 
 
 class WorkerHandler:
@@ -13,7 +13,7 @@ class WorkerHandler:
     
     def __init__(self, config=None):
         self.config = config or {}
-        self.name = "worker_a865e7"
+        self.name = "worker_0cf7e0"
         logger.info(f"Initialized {self.name}")
     
     def process(self, data):
